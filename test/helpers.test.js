@@ -1,4 +1,4 @@
-const { normalizePhone, shouldRespond } = require('../src/utils/helper');
+const { normalizePhone, shouldRespond } = require('../src/utils/helpers');
 
 let failures = 0;
 function ok(cond, msg) {
