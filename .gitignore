@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+*.session
+*.log
+logs/
+.DS_Store
+dist/
+.coverage/
+.nyc_output/
+auth_info_baileys/
+data/

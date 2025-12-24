@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  miyabi-bot:
+    build: .
+    container_name: miyabi-whatsapp-bot
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./auth_info_baileys:/app/auth_info_baileys
+      - ./logs:/app/logs
+      - ./data:/app/data
+    networks:
+      - miyabi-network
+
+volumes:
+  auth_info_baileys:
+
+networks:
+  miyabi-network:
+    driver: bridge
