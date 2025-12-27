@@ -16,7 +16,6 @@ const path = require('path');
 const fs = require('fs');
 
 const MiyabiBot = require('./src/bot/miyabibot');
-const Helpers = require('./src/utils/helpers');
 const Database = require('./src/database/db');
 
 const logger = pino({ level: process.env.PINO_LEVEL || 'silent' });
